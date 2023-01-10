@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building HTML Forms</title>
+</head>
+<body>
+    <form method="POST">
+        <fieldset>
+            <legend>Add user</legend>
+            <label for="firstname">First Name:</label>
+            <input type="text" id="firstname" name="firstname">
+            <label for="lastname">Last Name:</label>
+            <input type="text" id="lastname" name="lastname">
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email">
+
+            <label for="status">Status</label>
+            <select name="status" id="status">Student
+                <option value="student">Student</option>
+                <option value="teacher">Teacher</option>
+                <option value="guest">Guest</option>
+            </select>
+
+            <p>Choose your favorite programming language:</p>
+            <div>
+                <input type="radio" id="HTML" name="radio" value="HTML">
+                <label for="HTML">HTML</label>
+            </div>
+                
+            <div>
+                <input type="radio" id="CSS" name="radio" value="CSS">
+                <label for="CSS">CSS</label>
+            </div>
+
+            <div>
+                 <input type="radio" id="Javascript" name="radio" value="Javascript">
+                 <label for="Javascript">Javascript</label>
+            </div>
+
+            <label for="comments">Comments</label>
+            <textarea name="comments" id="comments" cols="30" rows="10">
+
+            </textarea>
+            <label for="date">Current Date:</label>
+            <input type="text" id="date" name="date">
+            <dive>
+                <input type="checkbox" id="terms" name="terms">
+                <label for="terms">Accept terms and conditions</label>
+            </dive>
+            <dive>
+                <input type="checkbox" id="newsletter" name="newsletter">
+                <label for="newsletter">Sign up for newsletter</label>
+            </dive>
+
+            <div>
+                <input type="submit" value="send request" />
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
